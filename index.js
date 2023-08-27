@@ -6,10 +6,8 @@ app.use(express.json())
 
 app.use(cors());
 
-
-
-app.use('/api/earth-mars-comm',require('./routes/messageRoutes'))
+app.use('/api/earth-mars-comm',require('./Server/routes/messageRoutes'))
 
 app.listen(process.env.PORT, () => {
-    console.log("Listening on PORT :8000");
+    console.log(`Listening on PORT ${process.env.PORT}`);
 })

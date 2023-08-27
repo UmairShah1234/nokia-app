@@ -3,7 +3,7 @@ const messageMiddleware = (req, res, next) => {
     console.log(req.headers);
     const sender = req.headers.sender ;
     const reciever = req.headers.reciever ;
-    console.log(new Date().toLocaleString(time.getMinutes()));
+    console.log(new Date().toLocaleString(time.getMilliseconds()));
     console.log(`x-sender=${sender}`);
     console.log(`x-reciever=${reciever}`);
 
